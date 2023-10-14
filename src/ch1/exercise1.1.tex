@@ -1,0 +1,30 @@
+%%%%%%%%%%%%%%%%%%%%%%%
+\item
+%%%%%%%%%%%%%%%%%%%%%%%
+
+We first recall that the average speed of a particle in a system with temperature $T$ is given by
+\[
+	\bar{v} = \sqrt{\frac{8 k_B T}{\pi m_{Ag}}}.
+\]
+
+Suppose a silver atom moving at this speed passes through a region of length $l_1$ where it is accelerated upwards by $a$,
+followed by a region of length $l_2$ where it moves at constant velocity.
+The total upwards displacement is given by
+\begin{align*}
+	\Delta z
+	&= \half a_z {\left( \frac{l_1}{\bar{v}} \right)}^2 + a_z \left( \frac{l_1}{\bar{v}} \right) \cdot \frac{l_2}{\bar{v}} \\
+	&= \frac{a_z l_1 (l_1 + l_2)}{2 \bar{v}^2}.
+\end{align*}
+The separation between the spin-up and spin-down beams is twice this value.
+
+The silver atom's magnetic moment has value $\mu = 9.27 \times 10^{-24} J/T$
+and the vertical magnetic field changes by $\frac{\partial B_z}{\partial z} = 10 T/m$;
+hence, the upward force is given by $F_z = \mu \frac{\partial B_z}{\partial z} = 9.27 \times 10^{-23} N$.
+
+\begin{align*}
+	2\Delta z
+	&= \frac{a_z l_1 (l_1 + 2l_2)}{\bar{v}^2} \\
+	&= l_1 (l_1 + 2l_2) \cdot \frac{F_z}{m_{Ag}} \cdot \frac{\pi m_{Ag}}{8 k_B T} \\
+	&= (1 m) (3 m) \cdot (9.27 \times 10^{-23} N) \cdot \frac{\pi}{8 (\boltzmannConst) (1273 K)} \\
+	&\approx 6.22 mm.
+\end{align*}
