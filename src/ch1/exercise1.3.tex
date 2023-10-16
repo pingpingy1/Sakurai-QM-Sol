@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%
+\item
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}[labelindent = 0pt, label = (\roman*)]
+	\item $A = S_x$, $B = S_y$
+	\[
+		\braket{S_x}
+		= \spinbra{x}{+} S_x \spinket{x}{+}
+		= \braket{S_x; + | \halfhbar | S_x; +}
+		= \halfhbar
+	\]
+	\[
+		\braket{S_x^2}
+		= \braket{S_x; + | S_x^2 | S_x; +}
+		= \braket{S_x; + | {\left( \halfhbar \right)}^2 | S_x; +}
+		= \frac{\hbar^2}{4}
+	\]
+	\[
+		\Rightarrow \braket{{\left( \Delta S_x \right)}^2}
+		= \frac{\hbar^2}{4} - {\left( \halfhbar \right)}^2
+		= 0
+		\; \Rightarrow
+		\braket{{\left( \Delta S_x \right)}^2} \braket{{\left( \Delta S_y \right)}^2} = 0
+	\]
+
+	\vspace{10pt}
+
+	\[
+		\commutator{S_x}{S_y}
+		= i\hbar S_z
+		= \frac{i\hbar^2}{2} \left( \ket{+}\bra{+} - \ket{-}\bra{-} \right)
+	\]
+	\begin{align*}
+		\Rightarrow
+		\braket{\commutator{S_x}{S_y}}
+		&= \braket{S_x; + | \frac{i\hbar}{2} \left( \ket{+}\bra{+} - \ket{-}\bra{-} \right) | S_x; -} \\
+		&= \frac{i\hbar^2}{2}\spinbra{x}{+}\left( \sqrttwoinv (\ket{+} - \ket{-}) \right) \\
+		&= 0
+	\end{align*}
+
+	\[
+		\therefore
+		\braket{{\left( \Delta S_x \right)}^2} \braket{{\left( \Delta S_y \right)}^2}
+		\geq \frac{1}{4} {\left| \braket{\commutator{S_x}{S_y}} \right|}^2
+	\]
+
+	% =====================================
+
+	\item $A = S_z$, $B = S_y$
+	\begin{align*}
+		\braket{S_z}
+		&= \braket{S_x; + | \halfhbar \left( \ket{+}\bra{+} - \ket{-}\bra{-} \right) | S_x; +} \\
+		&= \halfhbar \spinbra{x}{+}\left( \sqrttwoinv (\ket{+} - \ket{-}) \right) \\
+		&= 0
+	\end{align*}
+	\[
+		\braket{S_z^2}
+		= \braket{S_x; + | \frac{\hbar^2}{4} \left( \ket{+}\bra{+} + \ket{-}\bra{-} \right) | S_x; +}
+		= \frac{\hbar^2}{4}
+	\]
+	\[
+		\Rightarrow \braket{{\left( \Delta S_x \right)}^2}
+		= \frac{\hbar^2}{4} - 0
+		= \frac{\hbar^2}{4}
+	\]
+	One can similarly find
+	\[
+		\braket{{\left( \Delta S_y \right)}^2} = \frac{\hbar^2}{4}
+		\Rightarrow
+		\braket{{\left( \Delta S_z \right)}^2} \braket{{\left( \Delta S_y \right)}^2}
+		= \frac{\hbar^4}{16}.
+	\]
+
+	\vspace{10pt}
+
+	\[
+		\commutator{S_z}{S_y}
+		= -i\hbar S_x
+	\]
+	\[
+		\Rightarrow
+		\braket{\commutator{S_z}{S_y}}
+		= \braket{S_x; + | \left( -i\hbar S_x \right) | S_x; -} \\
+		= -\frac{i\hbar^2}{2}
+	\]
+	\[
+		\Rightarrow
+		\frac{1}{4} {\left| \braket{\commutator{S_x}{S_y}} \right|}^2
+		= \frac{\hbar^4}{16}
+	\]
+
+	\[
+		\therefore
+		\braket{{\left( \Delta S_x \right)}^2} \braket{{\left( \Delta S_y \right)}^2}
+		\geq \frac{1}{4} {\left| \braket{\commutator{S_x}{S_y}} \right|}^2
+	\]
+
+\end{enumerate}

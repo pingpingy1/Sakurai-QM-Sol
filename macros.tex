@@ -1,9 +1,25 @@
-\documentclass{amsart}
+\documentclass{article}
 
 \usepackage{braket}
 \usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
 
+% Mathematical constants
 \newcommand{\half}{\frac{1}{2}}
+\newcommand{\sqrttwoinv}{\frac{1}{\sqrt{2}}}
+
+% Physical constants
 \newcommand{\boltzmannConst}{1.37\times10^{-23} J/K}
+\newcommand{\halfhbar}{\frac{\hbar}{2}}
+
+% Quantum operators
+\renewcommand{\ket}{\Ket}
+\renewcommand{\bra}{\Bra}
+\renewcommand{\braket}{\Braket}
+
 \newcommand{\commutator}[2]{\left[ #1, #2 \right]}
 \newcommand{\anticommutator}[2]{\left\{ #1, #2 \right\}}
+
+\newcommand{\spinket}[2]{\ket{S_{#1}; #2}}
+\newcommand{\spinbra}[2]{\bra{S_{#1}; #2}}
