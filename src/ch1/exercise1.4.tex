@@ -1,0 +1,79 @@
+%%%%%%%%%%%%%%%%%%%%%%%
+\item
+%%%%%%%%%%%%%%%%%%%%%%%
+
+We first observe that
+\[
+	\sigma_1 = \begin{pmatrix} 0 &  1 \\ 1 &  0\end{pmatrix},
+	\sigma_2 = \begin{pmatrix} 0 & -i \\ i &  0\end{pmatrix},
+	\sigma_3 = \begin{pmatrix} 1 &  0 \\ 0 & -1\end{pmatrix}
+\]
+\[
+	\Rightarrow X = \begin{pmatrix}
+		a_0 +  a_3 & a_1 - ia_2 \\
+		a_1 + ia_2 & a_0 - a_3
+	\end{pmatrix}
+\]
+
+\begin{enumerate}[labelindent = 0pt, label = (\alph*)]
+	\item \[
+		\sigma_1 X = \begin{pmatrix}
+			a_1 + ia_2 & a_0 -  a_3 \\
+			a_0 +  a_3 & a_1 - ia_2
+		\end{pmatrix}
+	\]
+	\[
+		\sigma_2 X = \begin{pmatrix}
+			-ia_1 +  a_2 & -ia_0 + ia_3 \\
+			 ia_0 + ia_3 &  ia_1 +  a_2
+		\end{pmatrix}
+	\]
+	\[
+		\sigma_3 X = \begin{pmatrix}
+			 a_0 +  a_3 &  a_1 - ia_2 \\
+			-a_1 - ia_2 & -a_0 +  a_3
+		\end{pmatrix}
+	\]
+	\[
+		\therefore \tr(X) = 2a_0,\; \tr(\sigma_k X) = 2a_k
+	\]
+
+	\item \[
+		\begin{pmatrix}
+			1 & 0 &  0 &  1 \\
+			0 & 1 & -i &  0 \\
+			0 & 1 &  i &  0 \\
+			1 & 0 &  0 & -1
+		\end{pmatrix}
+		\begin{pmatrix}
+			a_0 \\ a_1 \\ a_2 \\ a_3
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			X_{11} \\ X_{12} \\ X_{21} \\ X_{22}
+		\end{pmatrix}
+	\]
+	\[
+		\Rightarrow
+		\begin{pmatrix}
+			a_0 \\ a_1 \\ a_2 \\ a_3
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			\half & 0 & 0 & \half \\
+			0 & \half & \half & 0 \\
+			0 & \frac{i}{2} & -\frac{i}{2} & 0 \\
+			\half & 0 & 0 & -\half
+		\end{pmatrix}
+		\begin{pmatrix}
+			X_{11} \\ X_{12} \\ X_{21} \\ X_{22}
+		\end{pmatrix}
+	\]
+	\[
+		\therefore
+		a_0 = \half(X_{11} + X_{22}),\;
+		a_1 = \half(X_{12} + X_{21}),\;
+		a_2 = \frac{i}{2}(X_{12} - X_{21}),\;
+		a_3 = \half(X_{11} - X_{22})
+	\]
+\end{enumerate}
